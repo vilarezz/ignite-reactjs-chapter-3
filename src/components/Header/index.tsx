@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Link from 'next/Link'
 import { SignInButton } from './SingInButton'
 import styles from './styles.module.scss'
 
@@ -18,12 +17,8 @@ export function Header() {
       <div className={styles.headerContent}>
         <img src="/images/logo.svg" alt="" />
         <nav>
-          <Link href="/">
-            <a className={styles.active}>Home</a>
-          </Link>
-          <Link href="/posts">
-            <a>Posts</a>
-          </Link>
+          <a className={styles.active}>Home</a>
+          <a>Posts</a>
         </nav>
         <SignInButton />
 
