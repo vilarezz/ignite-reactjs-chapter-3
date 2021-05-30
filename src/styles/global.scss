@@ -6,8 +6,8 @@
   --gray-700: #323238;
   --gray-900: #121214;
   --green-850: #1f2729;
-  --cyan-500: #61dafb;
-  --yellow-500: #eba417;
+  --cyan-500: #eba417;
+  --yellow-500: #61dafb;
 }
 
 * {
@@ -28,8 +28,22 @@
 }
 
 body {
-  background: var(--gray-900);
+  background: linear-gradient(-45deg, #0e0d42, #330d42, #0d3142, #280d42);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   color: var(--gray-100);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body,
